@@ -1,0 +1,416 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url("../images/Bakground_home.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 60px;
+}
+
+/*====================================================================== Nav =====================================================================*/
+nav {
+  background: linear-gradient(to right, #004b85, #3a005b, #560032);
+  width: 100%;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 50px;
+  z-index: 2;
+  transition: top 0.3s;
+  position: fixed;
+  top: 0;
+}
+
+nav.active {
+  top: -60px;
+}
+
+nav .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+select {
+  padding: 5px;
+  margin-right: 10px;
+  background-color: #000000;
+  color: #fff;
+  margin-left: 10px;
+  border: none;
+  border-color: #000000;
+}
+
+button {
+  padding: 5px 10px;
+  color: #ffffff;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.home a,
+.cek-transaction a,
+.compare-price a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  margin-right: 0px;
+  font-size: 15px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-container button {
+  height: 40px;
+  width: 40px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-container button .material-icons {
+  font-size: 24px;
+  color: #fff;
+}
+
+.search-container button:hover {
+  background-color: transparent;
+}
+
+.text {
+  margin-left: 5px;
+}
+
+.header-content-1,
+.header-content-2,
+.right-content,
+.left-content,
+.language-selector {
+  display: inline-flex;
+  gap: 10px;
+}
+
+.cek-transaction,
+.compare-price,
+.home {
+  display: flex;
+  gap: 10px;
+  margin-left: 30px;
+}
+
+.language-selector select {
+  padding: 8px 10px;
+  font-size: 16px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #ffffff;
+  appearance: none;
+  cursor: pointer;
+}
+.language-selector select:hover {
+  border-color: #ffffff;
+}
+
+.language-selector select:focus {
+  border-color: #ffffff;
+}
+.language-selector select option {
+  background-color: #811070;
+  color: #000000;
+}
+.language-selector select option:hover {
+  background-color: #811070;
+}
+
+.header-content-1 {
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: auto;
+}
+
+.header-content-2 {
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.right-content {
+  margin-left: 0px;
+}
+
+.left-content {
+  margin-right: 0px;
+}
+
+.compare-price .material-symbols-outlined,
+.cek-transaction i.material-icons,
+.home i.material-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.left-content a {
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.home:hover,
+.compare-price:hover,
+.cek-transaction:hover {
+  border-bottom: 5px solid #fff;
+  border-radius: 5px;
+}
+
+.auth-links {
+  display: flex;
+  align-items: center;
+}
+.loginButton {
+  margin-left: -15px;
+  margin-right: 0px;
+}
+.registerButton,
+#profileButtonContainer {
+  margin-left: 0px;
+}
+
+.loginButton a {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: transparent;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.registerButton a {
+  color: hsl(0, 0%, 0%);
+  text-decoration: none;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-left: -10px;
+}
+
+.profileButton {
+  background-color: transparent; /* Warna latar belakang */
+  color: #ffffff; /* Warna teks */
+  padding: 5px 10px; /* Padding */
+  border: 3px groove #ffffff; /* Tidak ada border */
+  cursor: pointer; /* Cursor pointer */
+  border-radius: 5px; /* Border radius */
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.dropdown-content {
+  display: none; /* Pastikan ini tetap 'none' */
+  margin-left: 20px;
+  position: absolute;
+  background-color: #560032;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.dropdown-content a:hover {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius: 0px 0px 10px 10px;
+  color: #000000;
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block; /* Hapus baris ini jika menggunakan JavaScript */
+}
+
+/*================================================================================================================================================================*/
+/*============================================================================== footer ==========================================================================*/
+.footer-1 {
+  display: inline-flex;
+  background-color: transparent;
+  margin-top: 50px;
+}
+
+.menu-container {
+  position: column;
+  margin: 30px 30px;
+}
+.chat-container p,
+.support-container p,
+.flow-container p,
+.menu-container p {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 18px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  border-bottom: 5px solid #260057;
+  border-radius: 5px;
+}
+
+.menu-container a {
+  color: #676767;
+  font-size: 15px;
+  display: block;
+  flex-direction: column;
+  margin: 4px;
+}
+
+.flow-container {
+  position: column;
+  margin: 30px 5px;
+}
+
+.flow-container a {
+  color: #676767;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  margin: 4%;
+}
+
+.chat-container,
+.support-container {
+  position: column;
+  margin: 30px 5px;
+  margin-left: 30px;
+}
+
+.chat-container a,
+.support-container a {
+  color: #676767;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+/* Style untuk bagian perbandingan vendor */
+#compare-vendors {
+  margin-top: 6%;
+}
+
+/* Style untuk judul */
+#compare-vendors h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+/* Style untuk tabel perbandingan */
+.comparison-table {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+/* Style untuk setiap vendor */
+.vendor {
+  width: 45%;
+  padding: 20px;
+  background-color: #1c052a71;
+  border-radius: 10px;
+  box-shadow: 0 9px 18px rgba(69, 0, 80, 0.778);
+  transition: all 0.3s ease;
+}
+
+/* Efek blur pada latar belakang */
+.vendor::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px);
+  z-index: -1;
+}
+
+/* Style untuk judul vendor */
+.vendor h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+/* Style untuk daftar layanan, harga, dan lainnya */
+.vendor ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.vendor ul li {
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+/* Efek hover untuk setiap vendor */
+.vendor:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1);
+}
+
+/* Mengatur scrollbar secara keseluruhan */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Mengatur tombol panah dan area drag scrollbar */
+::-webkit-scrollbar-thumb {
+  background-color: #2c3e50;
+  border-radius: 10px;
+  border: 3px solid #ecf0f1;
+}
+
+/* Mengatur bagian track dari scrollbar */
+::-webkit-scrollbar-track {
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+/* Mengatur efek hover pada thumb scrollbar */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #34495e;
+}

@@ -1,0 +1,46 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style-register.css">
+    <script src="script.js"></script>
+    <script src="../dist/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@5/dark.css" />
+    
+<body>
+
+
+<section> 
+    <form action="/index.html" method="GET">
+        <div class="logo-container">
+            <img src="/Assets/logo/logo2.png" alt="logo" class="logo"/>
+        </div>
+         <h1>Register</h1>
+        <div class="inputbox">
+            <ion-icon name="mail-outline"></ion-icon>
+            <input type="email" required>
+            <label for="">Nama pengguna atau email </label>
+        </div>
+        <div class="inputbox">
+            <ion-icon name="lock-closed-outline"></ion-icon>
+            <input type="password" required>
+            <label for="">Kata Sandi</label>
+        </div>
+        <div class="forget">
+            <label for=""><input type="checkbox">Remember Me</label>
+            <a href="#">Lupa kata sandi?</a>
+        </div>            
+        <button type="submit" onclick="alert('akun anda telah dibuat')">Daftar</button>
+        <div class="daftar">
+            <p>sudah memiliki akun? <a href="/login/HalamanLogin.html">Login</a></p>
+        </div>
+    </form>
+</section>
+
+
+</body>
+</html>

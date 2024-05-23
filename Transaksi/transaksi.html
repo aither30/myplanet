@@ -1,0 +1,43 @@
+<section id="checkout">
+    <h2>Checkout</h2>
+    <div class="product-details">
+        <h3>Product Details</h3>
+        <!-- Insert product details here -->
+        <p>Product Name: Wedding Planning Service</p>
+        <p>Price: Rp 10,000,000</p>
+        <p>Quantity: 1</p>
+    </div>
+    <div class="payment-method">
+        <h3>Payment Method</h3>
+        <!-- Insert payment methods here -->
+        <input type="radio" id="ewallet" name="payment" value="ewallet">
+        <label for="ewallet">E-Wallet</label><br>
+        <input type="radio" id="va" name="payment" value="va">
+        <label for="va">Virtual Account (VA)</label><br>
+        <input type="radio" id="alfamart" name="payment" value="alfamart">
+        <label for="alfamart">Alfamart</label><br>
+        <input type="radio" id="indomaret" name="payment" value="indomaret">
+        <label for="indomaret">Indomaret</label><br>
+    </div>
+    <div class="shipping-address">
+        <h3>Shipping Address</h3>
+        <!-- Insert shipping address form here -->
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="50"></textarea><br>
+    </div>
+    <div class="shipping-method">
+        <h3>Shipping Method</h3>
+        <!-- Insert shipping methods here -->
+        <select id="shipping-options" name="shipping">
+            <option value="jne">JNE</option>
+            <option value="tiki">TIKI</option>
+            <option value="pos">Pos Indonesia</option>
+        </select>
+    </div>
+    <div class="estimated-arrival">
+        <h3>Estimated Arrival</h3>
+        <!-- Insert estimated arrival date here -->
+        <p>Estimated Delivery Date: May 20, 2024</p>
+    </div>
+    <button type="submit">Place Order</button>
+</section>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My PlanET</title>
+    <link rel="stylesheet" href="Vendor1.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="/script.js"></script>
+    <script src="/profile.js"></script>
+  </head>
+
+  <body onload="hideLoginAndRegister()">
+    <main>
+      <nav>
+        <div class="menu">
+          <div class="header-content-1">
+            <div class="left-content">
+              <div class="home">
+                <a href="/index.php"
+                  ><img
+                    src="/Assets/logo/logo-beranda.png"
+                    alt="logo"
+                    class="logo"
+                  />Beranda</a
+                >
+              </div>
+              <div class="cek-transaction">
+                <a href="/Transaksi/cektransaksi.html"
+                  ><img
+                    src="/Assets/logo/search.png"
+                    alt="logo"
+                    class="logo"
+                  />Cek Transaksi</a
+                >
+              </div>
+              <div class="compare-price">
+                <a href="/Banding Harga/Compare.html"
+                  ><img
+                    src="/Assets/logo/compare.png"
+                    alt="logo"
+                    class="logo"
+                  />Banding Harga</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="header-content-2">
+            <div class="right-content">
+              <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search..." />
+                <button id="searchButton"></button>
+              </div>
+              <div class="language-selector">
+                <select id="languageSelect" onchange="changeLanguage()">
+                  <option value="id">ID</option>
+                  <option value="en">Eng</option>
+                  <!-- Tambahkan pilihan bahasa lainnya sesuai kebutuhan -->
+                </select>
+              </div>
+              <div class="loginButton" id="loginButton">
+                <a href="/login/HalamanLogin.html" id="loginButton">Masuk</a>
+            </div>
+            <div class="registerButton" "registerButton">
+                <a href="/Register/register.html" id="registerButton">Daftar</a>
+            </div>
+            </div>
+          </div>
+
+          <div id="profileButtonContainer">
+            <button id="profileButton">Profile</button>
+          </div>
+        </div>
+      </nav>
+
+<main>
+  <section id="content">
+    <div id="about">
+        <h2>Tentang Kami</h2>
+        <p>Kami adalah wedding organizer dengan pengalaman bertahun-tahun yang berdedikasi untuk membuat hari istimewa Anda menjadi sempurna.</p>
+    </div>
+
+    <div id="services">
+        <h2>Layanan</h2>
+        <ul>
+            <li>Paket Dasar: Perencanaan dasar dan koordinasi.</li>
+            <li>Paket Premium: Semua yang Anda butuhkan dari awal hingga akhir.</li>
+            <li>Layanan Tambahan: Dekorasi, katering, fotografi, dan lainnya.</li>
+        </ul>
+    </div>
+
+    <div id="portfolio">
+        <h2>Portofolio</h2>
+        <div class="gallery">
+            <img src="wedding1.jpg" alt="Wedding 1">
+            <img src="wedding2.jpg" alt="Wedding 2">
+            <img src="wedding3.jpg" alt="Wedding 3">
+        </div>
+    </div>
+
+    <div id="pricing">
+        <h2>Harga</h2>
+        <p>Paket Dasar: Rp 10,000,000</p>
+        <p>Paket Premium: Rp 25,000,000</p>
+        <p>Untuk detail lebih lanjut, silakan hubungi kami.</p>
+    </div>
+
+    <div id="blog">
+        <h2>Blog</h2>
+        <article>
+            <h3>Tips Perencanaan Pernikahan</h3>
+            <p>Merencanakan pernikahan bisa menjadi tugas yang menantang. Berikut adalah beberapa tips untuk membantu Anda.</p>
+        </article>
+        <article>
+            <h3>Tren Dekorasi 2024</h3>
+            <p>Temukan tren dekorasi pernikahan terbaru untuk tahun 2024.</p>
+        </article>
+    </div>
+
+    <div id="contact">
+        <h2>Kontak</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Pesan:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Kirim</button>
+        </form>
+        <p>Alamat: Jl. Contoh No. 123, Jakarta</p>
+        <p>Telepon: 021-12345678</p>
+        <p>Email: info@weddingorganizer.com</p>
+    </div>
+
+    <div id="faq">
+        <h2>FAQ</h2>
+        <h3>Bagaimana cara memesan layanan?</h3>
+        <p>Anda bisa memesan layanan melalui formulir kontak di halaman ini atau langsung menghubungi kami via telepon atau email.</p>
+        
+        <h3>Apakah bisa mengubah tanggal acara?</h3>
+        <p>Ya, perubahan tanggal bisa dilakukan dengan pemberitahuan minimal 30 hari sebelumnya.</p>
+    </div>
+
+        <div id="transactions">
+            <h2>Beli Produk</h2>
+            <p>Lakukan pembelian disini</p>
+            <button type="button" onclick="location.href='transactions.html'">Beli</button>
+        </div>
+  </section>
+
+  <section id="testimonials-container">
+
+    <div id="testimonials">
+            <h2>Testimoni</h2>
+            <blockquote>
+              <p>"Layanan yang luar biasa! Pernikahan kami berjalan sempurna berkat tim yang profesional dan berdedikasi." - Anita & Budi</p>
+            </blockquote>
+            <blockquote>
+                <p>"Dekorasi dan koordinasi yang sangat baik. Terima kasih sudah membuat hari spesial kami menjadi lebih indah." - Sari & Rudi</p>
+            </blockquote>
+            <p>Syarat dan Ketentuan</p>
+        </div>
+
+    <div id="testimonials">
+      <h2>Testimoni</h2>
+      <blockquote>
+        <p>"Layanan yang luar biasa! Pernikahan kami berjalan sempurna berkat tim yang profesional dan berdedikasi." - Anita & Budi</p>
+      </blockquote>
+      <blockquote>
+          <p>"Dekorasi dan koordinasi yang sangat baik. Terima kasih sudah membuat hari spesial kami menjadi lebih indah." - Sari & Rudi</p>
+      </blockquote>
+      <p>Syarat dan Ketentuan</p>
+  </div>
+</section>
+
+
+</main>
+
+<footer>
+  <div class="img"></div>
+  <!-- Site Map Section -->
+  <div class="footer-1">
+    <div class="menu-container">
+      <p class="menu-trigger">Social Media</p>
+      <div class="social-media-menu">
+        <a
+          href="https://www.tiktok.com/"
+          target="_blank"
+          class="social-media-button tiktok"
+          >TikTok</a
+        >
+        <a
+          href="https://www.youtube.com/"
+          target="_blank"
+          class="social-media-button youtube"
+          >YouTube</a
+        >
+        <a
+          href="https://www.instagram.com/"
+          target="_blank"
+          class="social-media-button instagram"
+          >Instagram</a
+        >
+      </div>
+    </div>
+    <div class="flow-container">
+      <p class="flow-trigger">Peta Situs</p>
+      <div class="peta-situs-flow">
+        <a href="/index.php" class="peta-situs-button beranda"
+          >Beranda</a
+        >
+        <a
+          href="/Transaksi/cektransaksi.html"
+          class="peta-situs-button cek-transaksi"
+          >Cek Transaksi</a
+        >
+        <a href="/Banding Harga/Compare.html" class="peta-situs-button banding-harga"
+          >Banding Harga</a
+        >
+        <a href="/hubungi-kami" class="peta-situs-button hubungi-kami"
+          >Hubungi Kami</a
+        >
+        <a
+          href="/Dashboard/Dashboard.html"
+          class="peta-situs-button dashboard"
+          >Dashboard</a
+        >
+        <a href="/Ulasan/Ulasan.html" class="peta-situs-button ulasan"
+          >Ulasan</a
+        >
+      </div>
+    </div>
+    <div class="support-container">
+      <p class="support-trigger">Dukungan</p>
+      <div class="dukungan-support">
+        <a href="/WhatsApp" class="dukungan-button whatsapp">WhatsApp</a>
+        <a href="/Email" class="dukungan-button email">Email</a>
+        <a href="/Instagram" class="dukungan-button instagram-2"
+          >Instagram</a
+        >
+      </div>
+    </div>
+    <div class="chat-container">
+      <p class="chat-trigger">Chat</p>
+      <div class="chat-pesan">
+        <a href="/dirrectmessage" class="chat-button dirrectmessage"
+          >Dirrect Message</a
+        >
+        <a href="/customersercvie" class="chat-button Customerservice"
+          >Customer Service</a
+        >
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Tambahkan skrip JavaScript di bagian head atau sebelum penutup tag body -->
+</body>
+</html>
